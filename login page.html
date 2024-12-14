@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="/image.webp">
+    <title>Jacket Hub</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+     }
+        body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/sale\ image.jpg);
+    background-size: cover;
+}
+.box form{
+    position: absolute;
+    padding: 50px 40px ;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box form:hover{
+    transform: scale(1.03);
+        transition: all 0.5s ease-in-out;
+}
+
+.box form h2{
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgb(70, 224, 224);
+}
+
+.box form .input{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+    border:none;
+}
+.box form .input input{
+    position: relative;
+    width: 90%;
+    padding: 13px 10px;
+    font-weight: bold;
+    border-radius: 8px ;
+
+}
+.box form .links{
+    position: relative;
+    margin-top: 10px;
+}
+.box form .links a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.box form .links a:hover{
+    text-decoration: underline;
+    color: rgb(53, 168, 168);
+}
+.box form .submit{
+    margin-top: 20px;
+    padding: 10px 3px;
+}
+
+.box form .submit input{
+    padding: 10px 125px;
+    background-color: rgb(57, 224, 224);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.box form .submit :hover{
+    color: rgb(32, 167, 167);
+    background-color: #eee;
+    
+}
+
+
+.box{
+    position: relative;
+    width: 380px;
+    height: 60vh;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 1px ;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form>
+            <h2>Login</h2>
+            <div class="input">
+                <input type="text" placeholder=" Enter your Username" required>
+            </div>
+            <div class="input">
+                <input type="password" placeholder=" Enter Your Password" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Login">
+            </div>
+            <div class="links">
+                <a href="#">Forget Password</a>
+                <a href="#">Signup account</a>
+            </div>
+            
+            
+        </form>
+        </div>
+    </div>
+</body>
+</html>

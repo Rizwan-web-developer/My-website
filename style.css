@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* navbar */
+nav{
+    position: sticky;
+    top: 0;
+}
+.navbar {
+    width: 100%;
+    height: 13vh;
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px 1px rgb(203, 191, 191);
+   
+    
+}
+
+
+.logo {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 10px solid #dbd5d5;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.navbar .list {
+    width: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.navbar ul li {
+    list-style: none;
+    padding: 0px 50px;
+    margin-top: 30px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+ul li a:hover {
+    color: rgb(64, 203, 203);
+    border-bottom: 2px solid rgb(36, 206, 206);
+    cursor: pointer;
+}
+.navbar .searchbar{
+    margin-left: 10px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 30px;
+    padding: 0px 10px;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0px 10px 25px rgba(0, 0,0, 0.3);
+}
+.navbar .searchbar input{
+    padding: 3px 10px;
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+ fa-solid fa-magnifying-glass {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1fbbbb;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    color: #23afaf;
+    }
+
+.navbar .searchbar:hover input{
+    width:150px;
+}
+.button {
+    width: 30%;
+}
+
+.button button {
+    
+    margin-left: 170px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button button a{
+    text-decoration: none;
+    color: black;
+}
+.button :nth-child(1){
+    border-radius: 7px;
+    background-color:rgb(87, 232, 232);
+    border: 1px solid rgb(87, 232, 232);
+}
+
+/* navbar close */
+
+
+
+
+
+
+.sale img {
+    margin: auto;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    opacity: 30%;
+}
+.sale .t h2{
+    font-family: "Lobster", sans-serif;
+    background-image: url(images/sale\ image.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 8px;
+    font-size: 90px;
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sale .t  h3{
+    margin-top: 10px;
+    padding-left: 35px;
+    position: absolute;
+    font-weight: bold;
+    top: 40%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.sale .t  button{
+    padding: 10px 12px;
+    margin-top: 60px;
+    position: absolute;
+    font-weight: bold;
+    top: 40%;
+    left: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(26, 196, 196);
+    border: 2px solid  rgb(54, 168, 168) ;
+    border-radius: 5px;
+}
+
+
+
+.sale .t  button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* Mens cards */
+.menjacket {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 560px;
+    color: black;
+}
+
+.menjacket span {
+    color: rgb(30, 185, 185);
+}
+
+.carts {
+    height: 65vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.cart1 img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.cart1 {
+    box-shadow: 1px 1px 10px 1px;
+    background-color: white;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart1 img {
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cart1 h3 {
+    margin-top: 10px;
+    margin-left: 27px;
+}
+
+
+.icon{
+    margin-left: 30px;
+}
+.cart1 i {
+    color: yellow;
+}
+
+.cart1 button {
+    margin-top: 0px;
+    margin-left: 27px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgb(43, 203, 203);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.cart1 button a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart1 button:hover {
+    background-color: #eee;
+    color: black;
+    border: 2px solid #eee;
+}
+.cart1 p{
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .cart1 p del{
+    opacity: 2;
+  }
+  .cart1 p span{
+    color: red;
+  }
+
+
+
+
+
+
+
+
+/* Mens cards close */
+
+/* more */
+
+.more {
+    margin-top: 25px;
+}
+
+.more button {
+    margin-left: 600px;
+    padding: 10px;
+}
+
+.more button {
+    background-color: rgb(57, 219, 219);
+    border: none;
+    border-radius: 5px;
+}
+
+.more button:hover {
+    background-color: #eee;
+    color: rgb(24, 151, 151);
+    border: 2px solid #fff;
+}
+
+.more button a {
+    font-weight: bold;
+    text-decoration: none;
+
+    color: black;
+}
+
+/* women cards */
+
+
+
+.womenjacket {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 560px;
+    color: black;
+}
+
+.womenjacket span {
+    color: rgb(30, 185, 185);
+}
+
+.cartsp1 {
+    width: 80%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.cart4 {
+    box-shadow: 1px 1px 10px 1px;
+    background-color: white;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart4 img {
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cart4 img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.cart4 h3 {
+    margin-top: 10px;
+    margin-left: 27px;
+}
+
+.icon{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.fa-solid, .fas {
+    color: yellow;
+}
+
+.cart4 button {
+    margin-top: 5px;
+    margin-left: 27px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgb(43, 203, 203);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.cart4 button a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart4 button:hover {
+    background-color: #eee;
+    color: black;
+    border: 2px solid #eee;
+}
+
+.cart4 p{
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .cart4 p del{
+    opacity: 2;
+  }
+  .cart4 p span{
+    color: red;
+  }
+
+
+
+
+
+.cart5 {
+    box-shadow: 1px 1px 10px 1px;
+    background-color: white;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart5 img {
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cart5 img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.cart5 h3 {
+    margin-top: 10px;
+    margin-left: 27px;
+}
+
+.icon{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.fa-solid, .fas {
+    color: yellow;
+}
+
+.cart5 button {
+    margin-top: 5px;
+    margin-left: 27px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgb(43, 203, 203);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.cart5 button a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart5 button:hover {
+    background-color: #eee;
+    color: black;
+    border: 2px solid #eee;
+}
+
+.cart5 p{
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .cart5 p del{
+    opacity: 2;
+  }
+  .cart5 p span{
+    color: red;
+  }
+
+
+
+
+
+
+
+
+.cart6 {
+    box-shadow: 1px 1px 10px 1px;
+    background-color: white;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart6 img {
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cart6 img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.cart6 h3 {
+    margin-top: 10px;
+    margin-left: 27px;
+}
+
+.icon{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.fa-solid, .fas {
+    color: yellow;
+}
+
+.cart6 button {
+    margin-top: 5px;
+    margin-left: 27px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgb(43, 203, 203);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.cart6 button a {
+    text-decoration: none;
+    color: black;
+}
+
+.cart6 button:hover {
+    background-color: #eee;
+    color: black;
+    border: 2px solid #eee;
+}
+
+.cart6 p{
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .cart6 p del{
+    opacity: 2;
+  }
+  .cart6 p span{
+    color: red;
+  }
+/* card close */
+
+
+
+/* more */
+
+.more2 {
+    margin-top: 25px;
+}
+
+.more2 button {
+    margin-left: 600px;
+    padding: 10px;
+}
+
+.more2 button {
+    background-color: rgb(57, 219, 219);
+    border: none;
+    border-radius: 5px;
+}
+
+.more2 button:hover {
+    background-color: #eee;
+    color: rgb(24, 151, 151);
+    border: 2px solid #fff;
+}
+
+.more2 button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+    height: 25vh;
+    padding: 53px;
+}
+
+.footer .footertext {
+    margin-inline: 85px;
+}
+
+.footertext p {
+    margin-top: 15px;
+}
+
+.footericon {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+/* double card */
+
+.doublecard {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.doublecard1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 35%;
+    height: 50vh;
+    background-color: white;
+    border-radius: 15px;
+    margin-inline: 20px;
+    box-shadow: 2px 2px 10px 2px;
+}
+
+.doublecard1:hover {
+    transform: scale(1.03);
+    transition: all 0.5s ease-in-out;
+}
+
+.doublecard1 img {
+    height: 45vh;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+.doublecard1 .text {
+    padding: 22px;
+}
+
+.doublecard1 .text p {
+    margin-top: 10px;
+}
+
+.doublecard1 .text i {
+    margin-top: 10px;
+    color: yellow;
+}
+.doublecard1 p{
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .doublecard1 p del{
+    opacity: 2;
+  }
+  .doublecard1 p span{
+    color: red;
+  }
+
+.doublecard1 .text button {
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: rgb(47, 199, 199);
+    border: 2px solid rgb(47, 199, 199);
+    border-radius: 5px;
+}
+
+.doublecard1 .text button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.doublecard1 .text button:hover{
+    background-color: #eee;
+    border: 2px solid #eee;
+}
+
+.doublecard1 .text button a:hover{
+    color: rgb(46, 172, 172);
+}
+
+
+
+.doublecard2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 35%;
+    height: 50vh;
+    background-color: white;
+    border-radius: 15px;
+    margin-inline: 20px;
+    box-shadow: 2px 2px 10px 2px;
+}
+
+.doublecard2:hover {
+        transform: scale(1.03);
+        transition: all 0.5s ease-in-out;
+}
+
+.doublecard2 img {
+    width: 40%;
+    height: 45vh;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+.doublecard2 .text {
+    padding: 22px;
+}
+
+.doublecard2 .text p {
+    margin-top: 10px;
+}
+
+.doublecard2 .text i {
+    margin-top: 10px;
+    color: yellow;
+}
+
+.doublecard2 .text button {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: rgb(47, 199, 199);
+    border: 2px solid rgb(47, 199, 199);
+    border-radius: 5px;
+}
+
+.doublecard2 .text button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.doublecard2 .text button:hover{
+    background-color: #eee;
+    border: 2px solid #eee;
+    color: rgb(45, 192, 192);
+}
+.doublecard2 .text button a:hover{
+    color:rgb(45, 192, 192) ;
+}
+.doublecard2 p{
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .doublecard2 p del{
+    opacity: 2;
+  }
+  .doublecard2 p span{
+    color: red;
+  }
+
+
+
+
+
+
